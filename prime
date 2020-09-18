@@ -1,0 +1,50 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	 unsigned int a=0,b;
+	 
+printf("\t\t-- find the prime number--\n\n");
+	
+y:printf("\n\nEnter value = ");
+	scanf("%d",&a);
+	int prime=1;
+	
+	for (b=2;b<a;b++)
+	{
+		if (a%b==0)
+	{
+		prime=0;	
+		break ;
+		}
+		
+	}
+	if (prime==0) 
+	{
+		printf("\n%u is not prime number.\nBecause it is divided by.↓\n",a);
+		
+		for (b=2;b<a;b++)
+	{
+		if (a%b==0)
+	{
+			printf("\n\t:-> %u",b);
+	}
+	}
+	}
+
+	
+     else if(a==0)
+   {
+	printf("\nnull");
+   }
+
+	else 
+	{
+		printf("\n%u is prime number.\nBesause it can be only divided by 1 & self.",a);
+	}
+  
+   printf("\n_______________");
+	goto y;
+	return 0;	
+}
+		
