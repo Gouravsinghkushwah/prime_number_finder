@@ -20,7 +20,7 @@ int main()
     }
     if (prime==0) 
     {
-    printf("\n%u is not prime number.\nBecause it is divided by.↓\n",a);
+    printf("\n%u is not prime number.\nBecause it is divided by.\n",a);
 		
     for (b=2;b<a;b++)
     {
