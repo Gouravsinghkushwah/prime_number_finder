@@ -2,11 +2,17 @@
 #include<conio.h>
 int main()
 {
-  unsigned int a=0,b;
+  signed int a=0,b;
   printf("\t\t-- find the prime number--\n\n");
 	
   y:printf("\n\nEnter value = ");
     scanf("%d",&a);
+    if(a<.0)
+    {
+    printf("\nA negative number is prohibitive.\n");
+    goto y;
+    }
+
     int prime=1;
 	
     for (b=2;b<a;b++)
